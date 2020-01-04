@@ -33,14 +33,14 @@ class App extends React.Component{
             title: 'Irena Gao',
             headerLinks:
             [
-                    { title: 'Work', path: "/" },
+                    { title: 'Work', path: "/website" },
                     { title: 'Resume', path: '/resume' },
                     { title: 'Me', path: '/me'}
             ],
             home:{
                 title: "Hi I'm Irena!",
                 subTitle: 'I am a product designer, marketer, and front-end developer who creates technology for communities',
-                text: 'Checkout my work below!'
+                text: 'Check out my work below!'
             },
             resume:{
                 title: "Resume",
