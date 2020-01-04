@@ -73,7 +73,7 @@ class App extends React.Component{
                         <Route path="/Microdot" component={Microdot} />
                         <Route path="/Dwb" component={Dwb} />
                         <Route path="/Snapchat" component={() => {
-                             window.location.href = 'https://paper.dropbox.com/doc/Snapchat-Case-Study--AoI7HM9Zs9xXS9SkNheGGyxVAQ-kXklYQeqbnZvI3arlVpZf'; 
+                             window.location.replace = 'https://paper.dropbox.com/doc/Snapchat-Case-Study--AoI7HM9Zs9xXS9SkNheGGyxVAQ-kXklYQeqbnZvI3arlVpZf'; 
                              return null;}} />
                     <Footer />
                     </Container>
