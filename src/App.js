@@ -34,7 +34,7 @@ class App extends React.Component{
             title: 'Irena Gao',
             headerLinks:
             [
-                    { title: 'Work', path: "/" },
+                    { title: 'Work', path: "/website" },
                     { title: 'Resume', path: '/resume' },
                     { title: 'Me', path: '/me'}
             ],
@@ -63,13 +63,13 @@ class App extends React.Component{
                             <Navbar.Toggle aria-controls="navbar-toggle"/>
                             <Navbar.Collapse id="navbar-toggle">
                                 <Nav className="ml-auto">
-                                    <h5> <Link className="nav-link display-5 font-weight-semibold" to="/">Work</Link></h5>
+                                    <h5> <Link className="nav-link display-5 font-weight-semibold" to="/website">Work</Link></h5>
                                     <h5> <Link className="nav-link display-5 font-weight-semibold" to="/me">Me</Link></h5>
                                     <h5> <a className="nav-link display-5 font-weight-semibold" href={Resume} target="_blank">Resume</a></h5>
                                 </Nav>
                             </Navbar.Collapse>
                         </Navbar>
-                        <Route path="/" exact render={() => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+                        <Route path="/website" exact render={() => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
                         <Route path="/me" render={() => <AboutPage title={this.state.me.title} />} />
                         <Route path="/Microdot" render={() => <Microdot />} />
                         <Route path="/Dwb" component={Dwb} />
