@@ -71,7 +71,7 @@ class App extends React.Component{
                         </Navbar>
                         <Route path="/" exact render={() => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
                         <Route path="/me" render={() => <AboutPage title={this.state.me.title} />} />
-                        <Route path="/Microdot" component={Microdot} />
+                        <Route path="/Microdot" render={() => <Microdot />} />
                         <Route path="/Dwb" component={Dwb} />
                     <Footer />
                     </Container>
