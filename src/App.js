@@ -54,7 +54,6 @@ class App extends React.Component{
 
     render(){
         return(
-            <HashRouter basename="/">
                 <Router>
                     <Container fluid={true}>
                         <Navbar bg="transparent" expand="lg">
@@ -71,12 +70,11 @@ class App extends React.Component{
                         </Navbar>
                         <Route path="/website" exact render={() => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
                         <Route path="/me" render={() => <AboutPage title={this.state.me.title} />} />
-                        <Route path="/Microdot" render={() => <Microdot />} />
+                        <Route path="/Microdot" render={() => <AboutPage title={this.state.me.title} />} />
                         <Route path="/Dwb" component={Dwb} />
                     <Footer />
                     </Container>
                 </Router>
-            </HashRouter>
         );
     }
 }
