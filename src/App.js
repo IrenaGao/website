@@ -72,7 +72,9 @@ class App extends React.Component{
                         <Route path="/me" render={() => <AboutPage title={this.state.me.title} />} />
                         <Route path="/Microdot" component={Microdot} />
                         <Route path="/Dwb" component={Dwb} />
-                        <Route path="/Snapchat" render={() => <a href='https://paper.dropbox.com/doc/Snapchat-Case-Study--AoI7HM9Zs9xXS9SkNheGGyxVAQ-kXklYQeqbnZvI3arlVpZf' target="_blank" />} />
+                        <Route path="/Snapchat" component={() => {
+                             window.location.href = 'https://paper.dropbox.com/doc/Snapchat-Case-Study--AoI7HM9Zs9xXS9SkNheGGyxVAQ-kXklYQeqbnZvI3arlVpZf'; 
+                             return null;}} />
                     <Footer />
                     </Container>
                 </Router>
