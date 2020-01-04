@@ -61,7 +61,7 @@ class App extends React.Component{
                         <Navbar.Toggle aria-controls="navbar-toggle"/>
                         <Navbar.Collapse id="navbar-toggle">
                             <Nav className="ml-auto">
-                                <h5> <Link className="nav-link display-5 font-weight-semibold" to="/">Work</Link></h5>
+                                <h5> <Link className="nav-link display-5 font-weight-semibold" to="/website">Work</Link></h5>
                                 <h5> <Link className="nav-link display-5 font-weight-semibold" to="/me">Me</Link></h5>
                                 <h5> <a className="nav-link display-5 font-weight-semibold" href={Resume} target="_blank">Resume</a></h5>
                             </Nav>
