@@ -18,7 +18,7 @@ function Card(props) {
                 <div class="card-body shadow-sm p-3 mb-5 bg-white rounded">
                     <h3 class="card-title display-5 font-weight-semibold">{props.item.title}</h3>
                     <h5 class="card-text display-6 font-weight-light">{props.item.subTitle}</h5>
-                    <Link to="/Microdot">Learn</Link>
+                    <Link className="card-link" to="/Microdot">Learn</Link>
                     <a href={props.item.link} className="card-link" target="_blank">Learn More</a>
                 </div>
             </div>
