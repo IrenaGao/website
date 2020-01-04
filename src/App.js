@@ -36,7 +36,8 @@ class App extends React.Component{
             [
                     { title: 'Work', path: "/website" },
                     { title: 'Resume', path: '/resume' },
-                    { title: 'Me', path: '/me'}
+                    { title: 'Me', path: '/me'},
+                    { title: 'Microdot', path: '/microdot'}
             ],
             home:{
                 title: "Hi I'm Irena!",
@@ -70,7 +71,7 @@ class App extends React.Component{
                         </Navbar>
                         <Route path="/website" exact render={() => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
                         <Route path="/me" render={() => <AboutPage title={this.state.me.title} />} />
-                        <Route path="/Microdot" render={() => <AboutPage title={this.state.me.title} />} />
+                        <Route path="/microdot" exact render={() => <AboutPage title={this.state.me.title} />} />
                         <Route path="/Dwb" component={Dwb} />
                     <Footer />
                     </Container>
