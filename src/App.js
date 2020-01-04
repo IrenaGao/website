@@ -67,7 +67,7 @@ class App extends React.Component{
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
-                    <Route path="/" exact render={() => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+                    <Route path="/website/" exact render={() => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
                     <Route path="/me" render={() => <AboutPage title={this.state.me.title} />} />
                     <Route path="/Microdot" component={Microdot} />
                     <Route path="/Dwb" component={Dwb} />
