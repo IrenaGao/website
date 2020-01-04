@@ -28,7 +28,7 @@ class Carousel extends React.Component {
                     title: 'Microdot',
                     subTitle: 'StartUp',
                     imgSrc: microdot,
-                    link: '/Microdot',
+                    link: "/Microdot",
                     selected: false
                 },
                 {
@@ -44,7 +44,7 @@ class Carousel extends React.Component {
                     title: 'Doctor Without Border Cornell Chapter',
                     subTitle: 'Personal Project',
                     imgSrc: dwb,
-                    link: '/Dwb',
+                    link: "Dwb",
                     selected: false
                 },
             ]
