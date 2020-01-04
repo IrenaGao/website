@@ -28,7 +28,7 @@ class Carousel extends React.Component {
                     title: 'Microdot',
                     subTitle: 'StartUp',
                     imgSrc: microdot,
-                    link: '/microdot',
+                    link: '/Microdot',
                     selected: false
                 },
                 {
