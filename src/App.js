@@ -36,8 +36,7 @@ class App extends React.Component{
             [
                     { title: 'Work', path: "/website" },
                     { title: 'Resume', path: '/resume' },
-                    { title: 'Me', path: '/me'},
-                    { title: 'Microdot', path: '/microdot'}
+                    { title: 'Me', path: '/me'}
             ],
             home:{
                 title: "Hi I'm Irena!",
