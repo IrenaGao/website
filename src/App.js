@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
   Link
@@ -33,7 +34,7 @@ class App extends React.Component{
             title: 'Irena Gao',
             headerLinks:
             [
-                    { title: 'Work', path: "/website" },
+                    { title: 'Work', path: "/" },
                     { title: 'Resume', path: '/resume' },
                     { title: 'Me', path: '/me'}
             ],
@@ -53,27 +54,29 @@ class App extends React.Component{
 
     render(){
         return(
-            <Router>
-                <Container fluid={true}>
-                    <Navbar bg="transparent" expand="lg">
-                        <h2> <Navbar.Brand className="display-2 font-weight-bolder"> Irena Gao </Navbar.Brand> </h2>
+            <HashRouter basename='/'>
+                <Router>
+                    <Container fluid={true}>
+                        <Navbar bg="transparent" expand="lg">
+                            <h2> <Navbar.Brand className="display-2 font-weight-bolder"> Irena Gao </Navbar.Brand> </h2>
 
-                        <Navbar.Toggle aria-controls="navbar-toggle"/>
-                        <Navbar.Collapse id="navbar-toggle">
-                            <Nav className="ml-auto">
-                                <h5> <Link className="nav-link display-5 font-weight-semibold" to="/website">Work</Link></h5>
-                                <h5> <Link className="nav-link display-5 font-weight-semibold" to="/me">Me</Link></h5>
-                                <h5> <a className="nav-link display-5 font-weight-semibold" href={Resume} target="_blank">Resume</a></h5>
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Navbar>
-                    <Route path="/website" exact render={() => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
-                    <Route path="/me" render={() => <AboutPage title={this.state.me.title} />} />
-                    <Route path="/Microdot" component={Microdot} />
-                    <Route path="/Dwb" component={Dwb} />
-                <Footer />
-                </Container>
-            </Router>
+                            <Navbar.Toggle aria-controls="navbar-toggle"/>
+                            <Navbar.Collapse id="navbar-toggle">
+                                <Nav className="ml-auto">
+                                    <h5> <Link className="nav-link display-5 font-weight-semibold" to="/">Work</Link></h5>
+                                    <h5> <Link className="nav-link display-5 font-weight-semibold" to="/me">Me</Link></h5>
+                                    <h5> <a className="nav-link display-5 font-weight-semibold" href={Resume} target="_blank">Resume</a></h5>
+                                </Nav>
+                            </Navbar.Collapse>
+                        </Navbar>
+                        <Route path="/" exact render={() => <HomePage title={this.state.home.title}  subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+                        <Route path="/me" render={() => <AboutPage title={this.state.me.title} />} />
+                        <Route path="/Microdot" component={Microdot} />
+                        <Route path="/Dwb" component={Dwb} />
+                    <Footer />
+                    </Container>
+                </Router>
+            </HashRouter>
         );
     }
 }
