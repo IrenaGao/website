@@ -54,7 +54,7 @@ class App extends React.Component{
 
     render(){
         return(
-            <HashRouter basename='/'>
+            <HashRouter basename="/">
                 <Router>
                     <Container fluid={true}>
                         <Navbar bg="transparent" expand="lg">
