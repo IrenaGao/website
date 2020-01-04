@@ -36,7 +36,7 @@ class Carousel extends React.Component {
                     title: 'SnapChat Case Study',
                     subTitle: 'Personal Project',
                     imgSrc: snapchat,
-                    link: 'https://paper.dropbox.com/doc/Snapchat-Case-Study--AoI7HM9Zs9xXS9SkNheGGyxVAQ-kXklYQeqbnZvI3arlVpZf',
+                    link: "/Snapchat",
                     selected: false
                 },
                 {
@@ -44,7 +44,7 @@ class Carousel extends React.Component {
                     title: 'Doctor Without Border Cornell Chapter',
                     subTitle: 'Personal Project',
                     imgSrc: dwb,
-                    link: "Dwb",
+                    link: "/Dwb",
                     selected: false
                 },
             ]
