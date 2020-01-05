@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 function Content(props) {
 
     return(
-        <Container fluid={false}>
+        <Container fluid={true}>
             <Row className="ml-5">
                 <Col className="d-inline" md={8}>
                     {props.children}
