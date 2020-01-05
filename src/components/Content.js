@@ -8,7 +8,7 @@ function Content(props) {
     return(
         <Container fluid={false}>
             <Row className="ml-5">
-                <Col md={8}>
+                <Col className="d-inline" md={8}>
                     {props.children}
                 </Col>
             </Row>
